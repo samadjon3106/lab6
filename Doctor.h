@@ -1,4 +1,4 @@
-ndef Doctor_h
+
 #define Doctor_h
 #include <iostream>
 #include "HospitalStaff.h"
