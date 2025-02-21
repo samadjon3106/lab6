@@ -1,4 +1,4 @@
-#ifndef Doctor_h
+ndef Doctor_h
 #define Doctor_h
 #include <iostream>
 #include "HospitalStaff.h"
@@ -36,4 +36,3 @@ public:
 };
 
 #endif /* Doctor_h */
-
