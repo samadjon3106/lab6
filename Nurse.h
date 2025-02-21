@@ -19,12 +19,7 @@ public:
     }
 
     void checkPatient(int ID) {
-        for (auto patient : patients) {
-            if (patient->getID() == ID) {
-                cout << "Patient with ID: " << ID << " has been checked." << endl;
-                return;
-            }
-        }
+
         cout << "There is no patient with ID: " << ID << endl;
     }
 };
