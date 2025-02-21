@@ -16,17 +16,17 @@ private:
 
 public:
     HospitalStaff(int ID, string name, string department): ID(ID), name(name), department(department) {}
-    
+
     virtual void displayInfo() = 0;
-    
+
     string getName(){
         return name;
     }
-    
+
     int getID(){
         return ID;
     }
-    
+
     string getDepartment() {
         return department;
     }
@@ -58,7 +58,7 @@ public:
         for (auto patient : patients) {
             cout << "Patient ID: " << patient->getID()
                  << " | Name: " << patient->getName()
-                 << " | Age: " << patient->getAge()
+
                  << endl;
             cout << "Diagnosis: " << patient->getDiagnosis()
                  << " | Treatment: " << patient->getTreatment()
@@ -66,7 +66,7 @@ public:
         }
     }
 
-    // Add method to remove patient
+
     void removePatient(int ID) {
         for (auto it = patients.begin(); it != patients.end(); ++it) {
             if ((*it)->getID() == ID) {
@@ -78,4 +78,3 @@ public:
 };
 
 #endif /* HospitalStaff_h */
-
