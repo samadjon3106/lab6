@@ -21,18 +21,20 @@ public:
     int getNightShifts(){
         return nightShift;
     }
-
-    void displayInfo() override {
-        cout << "Staff ID: " << getID() << " | Name: " << getName() << " | Department: " << getDepartment() << endl;
-        cout << "Specialization: " << specialization << " | Night Shifts: " << nightShift << endl;
-    }
-
+    
     void treatPatient(int ID, string treatment) {
         Patient* patient = findPatient(ID);
         if (patient != nullptr) {
             patient->setTreatment(treatment);
         }
     }
+        
+    void displayInfo() override {
+        cout << "Staff ID: " << getID() << " | Name: " << getName() << " | Department: " << getDepartment() << endl;
+        cout << "Specialization: " << specialization << " | Night Shifts: " << nightShift << endl;
+    }
+
+    
 };
 
 #endif /* Doctor_h */
