@@ -24,20 +24,12 @@ public:
     int getID(){
         return ID;
     }
-
     string getName(){
         return name;
     }
-    string getTreatment() {
-        return treatment;
-    }
-    string getDiagnosis() {
-        return diagnosis;
-    }
-    void setName(string name){
+     void setName(string name){
         this->name = name;
     }
-
     void setTreatment(string treatment){
         this->treatment = treatment;
     }
